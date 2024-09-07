@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Health Mitra Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <div class="logo">Health Mitra</div>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#ai-assistant">AI Assistant</a></li>
+                    <li><a href="#telemedicine">Telemedicine</a></li>
+                    <li><a href="#marketplace">Marketplace</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="section">
+            <h1>Welcome to Health Mitra</h1>
+            <p>Track your health, fitness, and wellness in one place.</p>
+            <div class="dashboard-cards">
+                <div class="card">
+                    <h2>Daily Step Count</h2>
+                    <p id="steps">0</p>
+                </div>
+                <div class="card">
+                    <h2>Heart Rate</h2>
+                    <p id="heart-rate">-- bpm</p>
+                </div>
+                <div class="card">
+                    <h2>Diet Plan</h2>
+                    <p id="diet-plan">Loading...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Assistant Section -->
+        <section id="ai-assistant" class="section">
+            <h2>Your Health Assistant</h2>
+            <div class="assistant-container">
+                <input type="text" id="ai-query" placeholder="Ask me a health question...">
+                <button id="ask-ai">Ask AI</button>
+                <p id="ai-response">Awaiting your question...</p>
+            </div>
+        </section>
+
+        <!-- Telemedicine Booking Section -->
+        <section id="telemedicine" class="section">
+            <h2>Book a Consultation</h2>
+            <form id="booking-form">
+                <input type="text" id="patient-name" placeholder="Your Name">
+                <input type="date" id="appointment-date">
+                <select id="doctor-speciality">
+                    <option value="General Practitioner">General Practitioner</option>
+                    <option value="Dietitian">Dietitian</option>
+                    <option value="Cardiologist">Cardiologist</option>
+                </select>
+                <button type="submit">Book Appointment</button>
+            </form>
+            <p id="booking-status">Awaiting appointment booking...</p>
+        </section>
+
+        <!-- Marketplace Section -->
+        <section id="marketplace" class="section">
+            <h2>Healthcare Marketplace</h2>
+            <div class="marketplace-grid">
+                <div class="product-card">
+                    <img src="images/medicine.jpg" alt="Medicine">
+                    <h3>Medicine</h3>
+                    <p>$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/fitness-band.jpg" alt="Fitness Band">
+                    <h3>Fitness Band</h3>
+                    <p>$50</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="images/vitamins.jpg" alt="Vitamins">
+                    <h3>Vitamins</h3>
+                    <p>$15</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Health Mitra © 2024 - All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
